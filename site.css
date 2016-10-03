@@ -64,7 +64,7 @@ li a {
 
 
 .content{
-	height: 650px;
+	height: auto;
 	width: 500px;
 	background-color: #e0efe0;
 
@@ -72,7 +72,7 @@ li a {
 
 .leftnav{
 	float: left;
-	height: 650px;
+	height: auto;
 	width: 200px;
 	background-color: #88bbe1;
 	border-right: 1px solid #45ff00;
@@ -81,7 +81,7 @@ li a {
 }
 
 .rightnav{
-	height: 650px;
+	height: auto;
 	width: 300px;
 	margin-left: 200px;
 	background-color: #88bbe1;
