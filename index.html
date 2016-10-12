@@ -7,12 +7,32 @@
         FasTech Solutions Ltd - TIF
     </title>
     <link rel="stylesheet" type="text/css" href="site.css" />
+    <script src="jquery-3.1.1.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="google-site-verification" content="qGmla6py_uKH0n2cZGIGVYGvyJq_ZO3RnS0t41IpLJk" />
     <meta name="keywords" content=" msomi22, school, chuka, mwenda, peter, peter mwenda, mwende, diquin, dinah, dynah, fastech, solutions" />
+
 </head>
 
 <body>
+<script type="text/javascript">
+
+    function moveTruck(){
+    $('#events').animate(
+        {'margin-left': '1000px'}, 
+        3000, // Animation-duration
+        function(){
+            $('#events').css('margin-left','-100px');
+            moveTruck();
+            alert("animate!")
+        });
+    }
+
+  moveTruck();
+
+</script>
+
+
     <div class="wrapper">
         <div class="header">
             <div class="menu">
@@ -27,7 +47,7 @@
                         <a href="#">Services</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Career</a>
                     </li>
                 </ul>
             </div>
@@ -47,7 +67,28 @@
                     <li>
                         Kanyuru Day Secondary School -Chuka
                     </li>
+                    <li>
+                       Kambandi Day and Boarding Secondary School -Chuka
+                    </li>
                 </ol>
+
+            <nav> <u> <h1> Some of our employees</h1> </u></nav>   
+            <div class="image1">
+            	<label>Chief Executive Officer</label>
+                <div class="imagebox">
+                   <img src="mwenda.jpg" height="136px" width="195px" alt="Chief Executive Officer">
+                </div>
+            </div> 
+             <!--<div class="image2">
+            	<img src="" height="150px" width="195px" alt="Developer">
+            </div> -->
+             <div class="image3">
+                <label>Human Resource Mananger</label>
+                <div class="imagebox">
+                   <img src="mwende.jpg" height="136px" width="195px" alt="Human Resource Mananger">
+                </div>
+            </div>    
+
             </div>
             <div class="rightnav">
                 <em><u>FasTech solutions</u></em> is a growing IT Company in Kenya that provides wide range of IT solutions.
@@ -137,6 +178,12 @@
                 <br />
                 <br />
                 <br />
+
+            <div class="events" id="events">
+            	Latest news
+            	<p>Sat,23-2016: Upgrading our systems</p> <!--<marquee> </marquee> -->
+            </div>
+
             </div>
         </div>
         <div class="footer">
