@@ -100,6 +100,11 @@ li a {
     padding-left:5px;
     border:2px solid orange;
 }
+.facebook{
+    height: auto;
+    width: 291px; 
+    background-color: gray;
+}
 
 #marqueecontainer{
   position: relative; 
