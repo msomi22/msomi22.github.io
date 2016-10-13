@@ -12,13 +12,13 @@ body {
 .header {
     height: 100px;
     width: 500px;
-    background-color: #a4a237;
+    background-color: #88bbe1;
     background-image: url("logo.png");
 }
 .menu {
     height: 20px;
     width: 500px;
-    background-color: #e3c51f;
+    background-color: #88bbe1;
     background-image: url("menu.png");
     background-repeat: no-repeat;
 }
@@ -69,6 +69,60 @@ li a {
 .misionVision {
     color: #3406ef;
 }
+
+.image1{
+    background-color: #88bbe1;
+    height: 150px;
+    width: 195px;
+    border:3px solid #0c20f9;
+}
+.image2{
+    background-color: #88bbe1;
+    height: 150px;
+    width: 195px;
+    border:3px solid #0c20f9;
+}
+.image3{
+    background-color: #88bbe1;
+    height: 150px;
+    width: 195px;
+    border:3px solid #0c20f9;
+}
+
+.imagebox{
+    margin: 3px auto;
+    background-color: #88bbe1;
+}
+
+.contact{
+    height: auto;
+    width: 292px; 
+    padding-left:5px;
+    border:2px solid orange;
+}
+
+#marqueecontainer{
+  position: relative; 
+  width: 289px; 
+  height: 50px; 
+  background-color: #73f30b;
+  overflow: hidden;
+  border: 3px solid orange;
+  padding-left: 4px; 
+
+}
+
+#vmarquee{
+    position: absolute;
+    width: 290px;
+}
+
+
+
+label{
+	color:#0b0a0a;
+}
+
 .footer {
     height: 50px;
     width: 500px;
@@ -77,42 +131,4 @@ li a {
     text-align: center;
     border-bottom: 4px solid #45ff00;
     color: #ffea00;
-}
-.image1{
-    background-color: #88a9db;
-    height: 150px;
-    width: 195px;
-    border:3px solid #0c20f9
-}
-.image2{
-    background-color: #88a9db;
-    height: 150px;
-    width: 195px;
-    border:3px solid #0c20f9
-}
-.image3{
-    background-color: #88a9db;
-    height: 150px;
-    width: 195px;
-    border:3px solid #0c20f9
-}
-#marqueecontainer{
-  position: relative;
-  width: 289px; 
-  height: 50px; 
-  background-color: #73f30b;
-  overflow: hidden;
-  border: 3px solid orange;
-  padding: 2px;
-  padding-left: 4px; 
-                
-}
-
-.imagebox{
-	margin: 3px auto;
-	background-color: white;
-}
-
-label{
-	color: #ffea00;
 }
