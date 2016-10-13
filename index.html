@@ -7,7 +7,7 @@
         FasTech Solutions Ltd - TIF
     </title>
     <link rel="stylesheet" type="text/css" href="site.css" />
-    <script src="jquery-3.1.1.min.js"></script>
+    <script src="scroll.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="google-site-verification" content="qGmla6py_uKH0n2cZGIGVYGvyJq_ZO3RnS0t41IpLJk" />
     <meta name="keywords" content=" msomi22, school, chuka, mwenda, peter, peter mwenda, mwende, diquin, dinah, dynah, fastech, solutions" />
@@ -15,33 +15,16 @@
 </head>
 
 <body>
-<script type="text/javascript">
-
-    function moveTruck(){
-    $('#events').animate(
-        {'margin-left': '1000px'}, 
-        3000, // Animation-duration
-        function(){
-            $('#events').css('margin-left','-100px');
-            moveTruck();
-            alert("animate!")
-        });
-    }
-
-  moveTruck();
-
-</script>
-
 
     <div class="wrapper">
         <div class="header">
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">Partnership</a>
                     </li>
                     <li>
                         <a href="#">Services</a>
@@ -79,16 +62,15 @@
                    <img src="mwenda.jpg" height="136px" width="195px" alt="Chief Executive Officer">
                 </div>
             </div> 
-             <!--<div class="image2">
-            	<img src="" height="150px" width="195px" alt="Developer">
-            </div> -->
              <div class="image3">
                 <label>HR-Manager (MS. Dynah Mwende)</label>
                 <div class="imagebox">
                    <img src="mwende.jpg" height="136px" width="195px" alt="Human Resource Mananger">
                 </div>
             </div>    
-
+            <p style="color:blue; padding-left:3px;">
+               <a href="index.html">See more employees ...</a> 
+            </p>
             </div>
             <div class="rightnav">
                 <em><u>FasTech solutions</u></em> is a growing IT Company in Kenya that provides wide range of IT solutions.
@@ -175,14 +157,26 @@
                 <a href="tel:254789495443">Call: 254-789-495-443</a>
                 <br />
                 <a href="sms:254789495443">SMS: 254-789-495-443</a>
-                <br />
-                <br />
-                <br />
+               
+                <h2 align="center"> <u>Top stories</u> </h2>
+                <div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+                  <div id="vmarquee" style="position: absolute; width: 290px;">
+                    <p> <u><i><b>MS. Dynah Mwende</b></i> to host ITC Secretaary <i><b>Joe Mucheru</b></i></u> <br>
+                    The Secretary will be visiting FasTech Solutions on November 8th, 2016. Some of the key areas to be discussed
+                    include the adoption of new ICT bill and the regulation of software development in Kenya. The Secretary is also
+                    expected to ....
+                    </p>
+                    <p> <u><i><b>The Company to host East Africa ICT summit 2016</b></i></u> <br>
+                     ICT East Africa Summit will he held on 13th Tue, December 2016, We are happy to host this prestigious event.
+                     All are welcome at our main hall starting from 10am.  
+                    </p>
+                   <p> <u>Partnership deal with <b>Jieng Chuong Company</b> from China</u> <br>
+                    Jieng Chuong, the leading ICT Company from China will be signing a partnership deal that will see 
+                    the company open job opportunities for many Kenyans. The deal is expected to be ready by March 2017.
+                    </p>
+                  </div>
+                </div>
 
-            <div class="events" id="events">
-            	Latest news
-            	<p>Sat 29,October-2016: Upgrading our systems</p> <!--<marquee> </marquee> -->
-            </div>
 
             </div>
         </div>
