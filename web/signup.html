@@ -67,11 +67,20 @@
 		                        <input type="email" name="email" placeholder="Email" class="form-control" required autocomplete="off">
 		                    </div>
 		                </div>
-
+                        
 		                <div class="form-group">
 		                    <label for="password" class="col-sm-3 control-label">Password</label>
 		                    <div class="col-sm-9">
-		                        <input type="password" name="password" placeholder="Password" class="form-control" required autocomplete="off">
+		                        <input type="password" name="password" id="password" placeholder="Password" class="form-control" required autocomplete="off">
+		                    </div>
+		                </div>
+
+
+		                <div class="form-group">
+		                    <p class="text-center" id="validate-status" style="color:red;"> </p>
+		                    <label for="password" class="col-sm-3 control-label">Confirm Password</label>
+		                    <div class="col-sm-9">
+		                        <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" class="form-control" required autocomplete="off">
 		                    </div>
 		                </div>
 
@@ -165,5 +174,27 @@
 </div><!-- /.modal -->
 
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+      $("#cpassword").keyup(validate);
+    });
+
+
+function validate() {
+  var password1 = $("#password").val();
+  var password2 = $("#cpassword").val();
+
+    
+ 
+    if(password1 != password2) {
+       $("#validate-status").text("Password doesn't match!");        
+    }else{
+    	$("#validate-status").text(" ");
+    }
+}
+
+
+</script>
 </body>
 </html>
