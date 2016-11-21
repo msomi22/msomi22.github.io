@@ -5,19 +5,19 @@ body {
 }
 .wrapper {
     max-height: auto;
-    width: 500px;
-    max-width: 500px;
+    width: 900px;
+    max-width: 900px;
     margin: 10px auto;
 }
 .header {
     height: 100px;
-    width: 500px;
+    width: 900px;
     background-color: #88bbe1;
     background-image: url("logo.png");
 }
 .menu {
     height: 20px;
-    width: 500px;
+    width: 900px;
     background-color: #88bbe1;
     background-image: url("menu.png");
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
     display: inline;
     padding: 0 5px 0 5px;
     margin: 0 5px 0 5px;
-    font-size: 16px;
+    font-size: 20px;
 }
 ul {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -45,26 +45,27 @@ li a {
 }
 .content {
     height: auto;
-    width: 500px;
+    width: 900px;
     background-color: #88bbe1;
 }
 .leftnav {
     float: left;
     height: auto;
-    width: 200px;
+    width: 300px;
     background-color: #88bbe1;
     border-right: 1px solid #45ff00;
-    font-size: 10px;
+    font-size: 20px;
+    padding: 5px;
 }
 .rightnav {
     height: auto;
-    width: 300px;
-    margin-left: 200px;
+    width: 600px;
+    margin-left: 300px;
     background-color: #88bbe1;
-    font-size: 10px;
+    font-size: 20px;
 }
 .rightnav dd {
-    font-size: 8px;
+    font-size: 20px;
 }
 .misionVision {
     color: #3406ef;
@@ -72,20 +73,20 @@ li a {
 
 .image1{
     background-color: #88bbe1;
-    height: 150px;
-    width: 195px;
+    height: 152px;
+    width: 295px;
     border:3px solid #0c20f9;
 }
 .image2{
     background-color: #88bbe1;
-    height: 150px;
-    width: 195px;
+    height: 152px;
+    width: 295px;
     border:3px solid #0c20f9;
 }
 .image3{
     background-color: #88bbe1;
-    height: 150px;
-    width: 195px;
+    height: 152px;
+    width: 295px;
     border:3px solid #0c20f9;
 }
 
@@ -96,7 +97,7 @@ li a {
 
 .contact{
     height: auto;
-    width: 291px; 
+    width: 591px; 
     padding-left:5px;
     border:2px solid orange;
 }
@@ -104,7 +105,7 @@ li a {
 
 #marqueecontainer{
   position: relative; 
-  width: 289px; 
+  width: 589px; 
   height: 50px; 
   background-color: #73f30b;
   overflow: hidden;
@@ -115,7 +116,7 @@ li a {
 
 #vmarquee{
     position: absolute;
-    width: 291px;
+    width: 591px;
 }
 
 
@@ -128,14 +129,14 @@ label{
     height: auto;
     width: 498px;
     background-color: #88bbe1;
-     border: 1px solid orange;
+    border: 1px solid orange;
 }
 
 .footer {
     height: 50px;
-    width: 500px;
+    width: 900px;
     background-color: #0e38f2;
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
     border-bottom: 4px solid #45ff00;
     color: #ffea00;
