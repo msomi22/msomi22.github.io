@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>School Template by Peter</title>
+ 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
+       
+    <style type="text/css">
+    body {
+      padding-top: 70px;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: auto}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+
+  </style>
+
+
+  </head>
+
+  
+  <body>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">FastPro School</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+
+            <li class="disabled"><a href="">Students</a></li>
+            <li class="disabled"><a href="#finance">Finance</a></li>
+
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Examination <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Exam Results</li>
+                <li class="disabled"><a href="">Form 1</a></li>
+                <li class="disabled"><a href="">Form 2</a></li>
+                <li class="disabled"><a href="">Form 3</a></li>
+                <li class="disabled"><a href="">Form 4</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">More..</li>
+                <li class="disabled"><a href="">Submit exam</a></li>
+
+              </ul>
+            </li>
+
+             <li class="disabled"><a href="#staff">Staff</a></li>
+             <li class="active"><a href="controlp.html">Control Panel</a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  <button type="button" class="btn btn-default btn-xs">
+                 <span class="glyphicon glyphicon-user"></span> User
+                </button>
+                <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="divider"></li>
+                    <li><a href="profile.html">Profile</a></li> <br>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+               </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Quick Links</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="home.html">Home</a></li>
+       
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Anything...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+       <hr>
+      <div id="myCarousel" class="carousel slide">
+          <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Carousel items -->
+                  <div class="carousel-inner">
+                  <div class="item active">
+                  <img src="img/slide/slide1.jpg" alt="First slide">
+                  <div class="carousel-caption">This Caption 1</div>
+                  </div>
+                  <div class="item">
+                  <img src="img/slide/slide2.jpg" alt="Second slide">
+                  <div class="carousel-caption">This Caption 2</div>
+                  </div>
+                  <div class="item">
+                  <img src="img/slide/slide3.jpg" alt="Third slide">
+                  <div class="carousel-caption">This Caption 3</div>
+                  </div>
+                  </div>
+                  <!-- Carousel nav -->
+              <a class="carousel-control left" href="#myCarousel"
+                  data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#myCarousel"
+                  data-slide="next">&rsaquo;</a>
+          </div>
+          <hr>
+    </div>
+
+    <div class="col-sm-9">
+        <div class="breadcrumb">
+             CONFIGURATION : TERM 3 : 2016
+       </div>
+
+
+      
+      <!-- panel start -->
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title"> CONFIGURATION : TERM 3 : 2016</h3>
+            </div>
+            <div class="panel-body">
+
+   
+            <div class="panel panel-default panel-table">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col col-xs-6">
+                    <h3 class="panel-title">  Important Notes!  </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body">
+               <strong>ET F1:</strong>  Stands for, end of term form one, when ON, <u>only</u> end term exam will be counted, affects FORM 1 only.<br>
+               <strong>ET:</strong> Means end term, when ON it means  <u>only</u> end term exam is considered, all cats will be excluded, affects F1-F4. <br>
+               <strong>ET C2:</strong> When ON  means  <u>only</u> end term and cat 2 exams are included, cat 1 will be discarded, affects F1-F4. <br>
+               <strong>ET C1 C2:</strong> When ON means cat 1 , cat 2 and end term exams will be counted, affects F1-F4. <br>
+               <strong>Mode:</strong> When ON the system will compute   P1,P2 and P3 , otherwise C1,C2 and ET (form 3 & 4 only). <br>
+               <strong>SMS send:</strong> Put this OFF to disable SMS sending. <br>
+               <small style="color:red;">If SMS send is ON, SMSes will be sent when fee is paid and when report cards are generated.</small>
+               <p>C1 stands for cat1 , C2 - cat2, ET - end term , P1 - paper1, P2 - paper2 and P3 paper3. </p>
+
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+                  <div class="col col-xs-4"> <small> <i>Read carefully.</i> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
+
+
+                          <ul id="myTab" class="nav nav-tabs">
+                              <li class="active">
+                                  <a href="#examConfig" data-toggle="tab">Exam Configurations </a>
+                              </li>
+
+                              <li>
+                                  <a href="#gradeScale" data-toggle="tab">Grading Scale</a>
+                              </li>
+
+                              <li>
+                                  <a href="#basicInfo" data-toggle="tab">Basic Information</a>
+                              </li>
+
+                              <li>
+                                  <a href="#examOutof" data-toggle="tab">Exam Outof</a>
+                              </li>
+
+                              <li>
+                                  <a href="#delteStude" data-toggle="tab">Delete Student</a>
+                              </li>
+                            </ul>
+
+
+                            <div id="myTabContent" class="tab-content">
+
+                                <div class="tab-pane fade in active" id="examConfig">
+                                     
+                                  <!-- start********start  -->
+                                     
+                                     <div class="panel panel-default panel-table">
+                                      <div class="panel-heading">
+                                        <div class="row">
+                                          <div class="col col-xs-6">
+                                            <h3 class="panel-title"> Configurations  </h3>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="panel-body">
+                                      <div class="table-responsive ">
+                                      <table class="table table-striped table-bordered bootstrap-datatable ">
+                                        <thead>
+                                            <tr>
+                                               
+                                                <th>Term</th>
+                                                <th>Year</th> 
+                                                <th>Exam</th>                
+                                                <th>Mode</th>
+                                                <th>SMS send</th>
+                                                <th>ET F1</th>
+
+                                                <th>ET</th>
+                                                <th>ET C2</th>
+                                                <th>ET C1 C2</th>
+                                                
+                                                <th>Action</th>
+                                               
+                                            </tr>
+                                        </thead>   
+                                        <tbody>
+                                            
+                                           
+
+                                        </tbody>
+                                    </table> 
+                                    </div>
+                                      </div>
+                                      <div class="panel-footer">
+                                        <div class="row">
+                                          <div class="col col-xs-4"> <small> <i>Change only if you understand the effect.</i> </small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+
+
+                                   <!--end************end-->
+
+                                </div>
+
+                                <div class="tab-pane fade" id="gradeScale">
+                                   
+                                   <!-- start********start  -->
+                                     
+                                      <div class="panel panel-default panel-table">
+                                      <div class="panel-heading">
+                                        <div class="row">
+                                          <div class="col col-xs-6">
+                                            <h3 class="panel-title"> Grading Scale  </h3>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="panel-body">
+                                      <div class="table-responsive ">
+                                      <table class="table table-striped table-bordered bootstrap-datatable ">
+                                        <thead>
+                                            <tr>
+                                               
+                                                <th>A</th>
+                                                <th>A-</th> 
+                                                <th>B+</th>                
+                                                <th>B</th>
+                                                <th>B-</th>
+                                                <th>C+</th>
+                                                <th>C</th>
+                                                <th>C-</th>
+                                                <th>D+</th>
+                                                <th>D</th>
+                                                <th>D-</th>
+                                                <th>E</th>
+                                                <th>Action</th>
+                                            
+                                            </tr>
+                                        </thead>   
+                                        <tbody>
+                                            
+                                            
+
+                                        </tbody>
+                                    </table>  
+                                       
+                                      </div>                                     
+                                    </div>
+                                     <div class="panel-footer">
+                                        <div class="row">
+                                          <div class="col col-xs-4"> <small> <i>This can be treaky to modify.</i> </small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  <!--end************end-->
+                                </div>
+
+                                <div class="tab-pane fade" id="basicInfo">
+                                   
+                                   <!-- start********start  -->
+                                    
+                                     <div class="panel panel-default panel-table">
+                                        <div class="panel-heading">
+                                          <div class="row">
+                                            <div class="col col-xs-6">
+                                              <h3 class="panel-title">  Basic Infomation to be embedded in report card  </h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="panel-body">
+                                         <div class="table-responsive ">
+                                        <table class="table table-striped table-bordered bootstrap-datatable ">
+                                          <thead>
+                                              <tr >
+                                                  <th>*</th>
+                                                  <th>Key</th>
+                                                  <th>Value</th> 
+                                                  <th></th>              
+                                              </tr>
+                                          </thead>   
+                                          <tbody>
+                                              
+                                          </tbody>
+                                      </table>  
+                                         
+                                        </div>                                        
+                                      </div>
+                                      <div class="panel-footer">
+                                          <div class="row">
+                                            <div class="col col-xs-4"> <small> <i>Update b4 generating report cards.</i> </small>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                  <!--end************end-->
+                                </div>
+
+                                <div class="tab-pane fade" id="examOutof">
+                                    
+
+                                    <!-- start********start  -->
+                                      
+                                      <div class="panel panel-default panel-table">
+                                        <div class="panel-heading">
+                                          <div class="row">
+                                            <div class="col col-xs-6">
+                                              <h3 class="panel-title">  Exam should be out-of what? set it here  </h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="panel-body">
+                                        <div class="table-responsive ">
+                                        <table class="table table-striped table-bordered bootstrap-datatable ">
+                                          <thead>
+                                              <tr >
+                                                  <th>*</th>
+                                                  <th>Exam type</th>
+                                                  <th>Out-of</th>  
+                                                  <th>Action</th>            
+                                                  
+                                               
+                                              </tr>
+                                          </thead>   
+                                          <tbody>
+                                             
+                                          </tbody>
+                                      </table>  
+                                         
+                                        </div>
+                                      </div>
+                                         <div class="panel-footer">
+                                          <div class="row">
+                                            <div class="col col-xs-4"> <small> <i>Update b4 submitting exam.</i> </small>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    <!--end************end-->
+                                   
+                                </div>
+
+                                <div class="tab-pane fade" id="delteStude">
+                                    
+
+                                    <!-- start********start  -->
+                                    
+                                    <div class="panel panel-default panel-table">
+                                                  <div class="panel-heading">
+                                                    <div class="row">
+                                                      <div class="col col-xs-6">
+                                                        <h3 class="panel-title">  Delete student's exam data (for this term  only )  </h3>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="panel-body">
+                                                   <div class="table-responsive ">
+                                                  <table class="table table-striped  ">
+
+                                                    <thead>
+                                                        <tr >             
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th>Search</th>
+                                                        </tr>
+                                                    </thead>   
+
+                                                    <tbody >
+
+                                                <form name="view" "> 
+
+                                                  <td width="8%" class="center">                              
+                                                    <p><b>Student Admission Number:</b><p>                                                    
+                                                     </td> 
+
+                                                      <td width="10%" class="center">                              
+                                                          <input class="input-xlarge focused"  type="text" name="AdmNo" 
+                                                              value=""  >                                                    
+                                                      </td> 
+
+                                                      <td width="10%" class="center">                                
+                                                            <input type="hidden" name="schooluuid" value="">
+                                                            <input class="btn btn-success" type="submit" name="view"  value="Find" />                                                         
+                                                          </td> 
+                                                  </form> 
+
+
+                                                    </tbody>                  
+                                                </table>  
+
+
+                                                 <table class="table ">
+                                                    <thead>
+                                                        <tr >             
+                                                            <th>Student AdmNo</th>
+                                                            <th>Student name</th>
+                                                        </tr>
+                                                    </thead>   
+                                                    <tbody >
+                                                       
+                                                    </tbody>                  
+                                                </table>  
+
+
+                                                <form  class="form-horizontal" autocomplete="off">           
+                                                    <div class="form-actions">                                                                   
+                                                        <button type="submit" class="btn btn-primary">Delete</button>
+                                                    </div> 
+                                                  </form>
+
+
+                                                   
+                                                  </div>
+                                                 </div>
+                                                  <div class="panel-footer">
+                                                    <div class="row">
+                                                      <div class="col col-xs-4"> <small> <i>This feature can be useful.</i> </small>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+
+
+
+                                    <!--end************end-->
+                                   
+                                </div>
+
+                            </div>
+                      
+
+
+
+
+            <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+
+
+
+       </div> <!-- end panel body -->
+                     <div class="panel-footer">
+                      <div class="row">
+                        <div class="col col-xs-4"> <small> <i> Sasa! Uko poa?.</i> </small> </div>
+                      </div>
+                     </div>
+      </div>  <!-- end panel -->
+    </div> 
+  </div>
+</div>
+
+<footer class="container-fluid">   
+    <p class="text-center"> &copy; FasTech Solutions. All Rights Reserved. </p>
+    <p class="text-center">  <button type="button" class="btn btn-link"> Lisence.</button> </p>
+    <p class="text-center">  <button type="button" class="btn btn-link"> Terms & Conditions.</button> </p>
+</footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+    <script src="js/bootstrap/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/bootstrap/bootstrap-button.js"></script>
+    <script src="js/bootstrap/bootstrap-tab.js"></script>
+    <script src="js/bootstrap/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap/bootstrap-modal.js"></script>
+    <script src="js/bootstrap/bootstrap-alert.js"></script>
+    
+    
+  
+  </body>
+</html>
+
