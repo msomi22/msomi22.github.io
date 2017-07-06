@@ -1,138 +1,155 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title> Login Page </title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
-    
-	<script src="js/bootstrap/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap/bootstrap-modal.js"></script>
-	
-     <!-- Mobile first -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="img/favicon.ico">
+<html lang="en">
 
-	<style type="text/css">
+    <head>
 
-        .colorgraph {
-          height: 5px;
-          border-top: 0;
-          background: #c4e17f;
-          border-radius: 5px;
-          background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-          background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-          background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-          background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-        }
-          </style>
-</head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Njeru Mwenda Peter</title>
 
-<body>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-<div class="container" style="margin-top:30px">
-		<div class="col-md-10 col-md-offset-1">
-		    <div class="panel panel-default">
-		  <div class="panel-heading"><h3 class="panel-title"><strong>Sign in </strong></h3>
-		      <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
-		  </div>
-		  
-		  <div class="panel-body">
+    </head>
 
-              <form class="form-horizontal"  role="form" >
-                 <h2>Please Sign in. <small>Use any username/password.</small></h2>
+    <body>
+		
+		<!-- Top menu -->
+		<nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Njeru Mwenda Peter</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					
+					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Me</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-                    <hr class="colorgraph">
-
-		               <div class="form-group">
-		                    <label for="Username" class="col-sm-3 control-label">Username</label>
-		                    <div class="col-sm-9">
-		                        <input type="text" name="Username" placeholder="Username" class="form-control" required autocomplete="off">
-		                    </div>
-		                </div>
-
-		               
-
-		                <div class="form-group">
-		                    <label for="password" class="col-sm-3 control-label">Password</label>
-		                    <div class="col-sm-9">
-		                        <input type="password" id="password" placeholder="Password" class="form-control" required autocomplete="off">
-		                    </div>
-		                </div>
-            
-			            <div class="row">
-			                <div class="col-xs-8 col-sm-9 col-md-9">
-			                     By clicking <strong class="label label-primary">Login</strong>, you agree to our <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a>.
-			                </div>
-			            </div>
-            
-                        <hr class="colorgraph">
-
-			           <div class="form-group">
-			                <div class="col-sm-9 col-sm-offset-3">  
-			                     <a href="home.html">Login</a>                                
-			                </div>
-
-			            </div>
-  
-                         <hr style="margin-top:10px;margin-bottom:10px;" >
-                                  
-                         <div class="form-group">                       
-                                <div style="font-size:85%">
-                                     Don't have an account! 
-                                        <a href="signup.html">
-                                            Sign Up Here
-                                        </a>
-                                 </div>
-                                    
-                          </div> 
-
-              </form>
-		     </div>
-		</div>
-		</div>
-		</div>
-
-<!-- Modal -->
-<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+        <!-- Top content -->
+        <div class="top-content">
+            <div class="container">
+            	
+                <div class="row">
+                    <div class="col-sm-12 text wow fadeInLeft">
+                        <h1>Welcome to <strong>Njeru Mwenda Peter's  </strong> Official Website</h1>
+                        <div class="description">
+                        	<p class="medium-paragraph">
+                         	
+                        	</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="modal-body">
-                <p>Permission is hereby granted, to a school/person obtaining a copy
-	            of this software and associated documentation files (the "Software"), to
-	            use the Software, subject to the following conditions:</p>
+        </div>
+        
+        <!-- Features -->
+        <div class="features-container section-container">
+	        <div class="container">
+	        	
+	            <div class="row">
+	                <div class="col-sm-12 features section-description wow fadeIn">
+	                    <h2>Reseach and Recent Projets</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-cloud"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>My cloud hosting and backup server</h3>
+		                    	<p>
+		                    		Cloud hosting is one of the recent tech,
+		                    		... read more.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-instagram"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>Sharing Knowledge</h3>
+		                    	<p>
+		                    		Giving back to the community is one of the best thing you can do to, this will help in mentoring the young people,... read more
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		
+	                	</div>
+	                </div>
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		
+	                	</div>
+	                </div>
+	            </div>
 
-	            <p>The school/person pays a fee not less than KSH 20,000 to use the 
-	            software for a period of not more than 20 years, OR buys the software
-	            permanently for a cost of KSH 120,000.</p>
+	        </div>
+        </div>
 
-	            <p>Service fee not less than KSH 1,000 will be required for fixing bugs and
-	                for any other kind of maintainace or upgrade relating to this product.</p>
+        <!-- Footer -->
+        <footer>
+	        <div class="container">
+	        	<div class="row">
+	        		<div class="col-sm-12 footer-copyright">
+                    	Peter Mwenda
+                    </div>
+                </div>
+	        </div>
+        </footer>
 
-	            <p>You can not ligally use this software, sell the software or part of
-	            the software without Licensor's permission.</p>
 
-	            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-	            FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-	            IN THE SOFTWARE.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
 
-</div>
-</body>
+    </body>
+
 </html>
