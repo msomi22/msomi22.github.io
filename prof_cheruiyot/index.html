@@ -1,0 +1,574 @@
+<!DOCTYPE html> <!-- !DOCTYPE tells the browser to use HTML 5 -->
+<html>
+<head>
+	<title>Web Technology Assignment</title> 
+
+	<style type="text/css">
+	 h1,h2,div{  
+          font-family: "Times New Roman", Georgia, Serif;   
+          text-align: center;
+          border: 1px solid powderblue;
+       }
+
+       #authorParam{
+
+         /* border property defines a border around an HTML element */  
+       	 border: 1px solid powderblue;
+       	 
+         /* padding property defines a padding (space) between the text and the border */
+       	 padding: 30px;
+
+       	 /* margin property defines a margin (space) outside the border */
+       	 margin: 50px;
+
+       }
+
+
+	</style>
+
+
+	<!-- 
+
+		The HTML <meta> Element
+		The <meta> element is used to specify which: 
+		1) character set is used, 
+		2) page description, 
+		3) keywords, 
+		4) author, and other metadata. 
+
+		Metadata is used by: 
+		1) browsers  (how to display content), 
+		2) search engines (keywords), and other web services.
+
+	-->
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Web Technology Assignment">  
+	<meta name="keywords" content="HTML, CSS, JavaScript, Prof Wilson Cheruiyot, Peter Mwenda, Web Technology"> 
+	<meta name="author" content="Peter Mwenda"> 
+
+	<!-- Refresh document every 30 seconds:
+
+		<meta http-equiv="refresh" content="30"> 
+
+	 -->
+
+
+	 <!-- Setting The Viewport
+
+	 	HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.
+
+	 	*The viewport is the user's visible area of a web page. 
+	 	*It varies with the device, and will be smaller on a mobile phone than on a computer screen.
+	 	*A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
+	 	*The width=device-width part sets the width of the page to follow the screen-width of the device 
+	 	(which will vary depending on the device).
+	 	*The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+	 	You should include the following <meta> viewport element in all your web pages:
+
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+	  -->
+
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	  <!-- 
+
+	  	 Tag	Description
+		<head>	Defines information about the document
+		<title>	Defines the title of a document
+		<base>	Defines a default address or a default target for all links on a page
+		<link>	Defines the relationship between a document and an external resource
+		<meta>	Defines metadata about an HTML document
+		<script>	Defines a client-side script
+		<style>	Defines style information for a document
+
+
+
+
+	  -->
+
+
+</head>
+
+<!--  
+
+	The HTML <base> Element
+    *The <base> element specifies the base URL and base target for all relative URLs in a page:
+    *<base href="https://www.w3schools.com/images/" target="_blank">
+
+
+    According to the HTML5 standard; the <html>, the <body>, and the <head> tag can be omitted.
+    Omitting these tags can crash DOM or XML software and produce errors in older browsers (IE9). 
+
+
+    HTML Layout Elements
+    *Websites often display content in multiple columns (like a magazine or newspaper).
+    *HTML5 offers new semantic elements that define the different parts of a web page:
+	    <header> - Defines a header for a document or a section
+		<nav> - Defines a container for navigation links
+		<section> - Defines a section in a document
+		<article> - Defines an independent self-contained article
+		<aside> - Defines content aside from the content (like a sidebar)
+		<footer> - Defines a footer for a document or a section
+		<details> - Defines additional details
+		<summary> - Defines a heading for the <details> element
+
+
+   HTML Layout Techniques
+
+    *There are four different ways to create multicolumn layouts. Each way has its pros and cons:	 
+    -HTML tables
+    -CSS float property 
+    -CSS framework like W3.CSS or Bootstrap.
+    -CSS flexbox	
+
+    Flexbox is a new layout mode in CSS3.
+    *Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices. 
+    *Disadvantages: Does not work in IE10 and earlier. 
+
+
+
+    HTML Responsive Web Design
+
+    *Responsive Images
+      1) Using the width Property
+        -If the width property is set to 100%, the image will be responsive and scale up and down:
+        -<img src="img_girl.jpg" style="width:100%;">
+
+      2) Using the max-width Property
+        -If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:
+        -<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+      3) Show Different Images Depending on Browser Width
+         -The HTML <picture> element allows you to define different images for different browser window sizes.
+         -Resize the browser window to see how the image below change depending on the width:
+
+         <picture>
+		  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+		  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+		  <source srcset="flowers.jpg">
+		  <img src="img_smallflower.jpg" alt="Flowers">
+		</picture>
+
+	*Responsive Text Size	
+	-The text size can be set with a "vw" unit, which means the "viewport width".
+	-<h1 style="font-size:10vw">Hello World</h1>
+
+	*Media Queries
+	-With media queries you can define completely different styles for different browser sizes.
+
+
+
+	HTML Computer Code Elements
+
+	<code>
+    x = 5;<br>
+	y = 6;<br>
+	z = x + y;
+	</code>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+<body>
+
+	<h1 style="color:blue;"> All about Web Technology ... 
+		<strong> 
+			<small> 
+				<i> By Prof. Cheruiyot </i> 
+				 </small>
+				  </strong> <!-- important--> 
+				</h1>  
+  
+    <p title='Site Author, "Peter Mwenda"' id="authorParam">Author: Peter Mwenda
+      <address>
+      	P.O. BOX 51 <br>
+      	60400 <br>
+      	KENYA <br>
+      </address>
+    </p> 
+
+    <a href="#C4">Jump to Middle </a>
+
+	<img src="peter.png" alt="Peter Mwenda" height="200" width="200">
+
+	<em> Welcome! </em>  I hope you have some water with you.
+	<br><mark>Yes, i said water,</mark> or if you like , H<sub>2</sub>0. 
+	This reminds me that water is made up fo Hydrogen (H<sup>2</sup>) and Oxygen (O).<br>
+	H<sup>2</sup> + O = H<sub>2</sub> 0 . Note, this is wrong, <del>H<sup>2</sup>O</del>.
+	<br>That said, let's now move on with <ins> web Tech </ins> 
+
+	<p>Prof. Kimani will tell you that ... <q> The power of any web based application is its userbility </q> </p>
+	<p>See also,...
+	<blockquote cite="http://www.designprinciplesftw.com/collections/10-usability-heuristics-for-user-interface-design">
+		The 10 most general principles for interaction design
+	</blockquote>
+	Read more about <abbr title="International Organization for Standardization">ISO</abbr> too.
+	</p>
+	<bdo dir="rtl">Let's move on </bdo>. Sorry, i mean Let's move on... <!-- bi-directional override -->
+
+
+
+    <!-- block-level element , the div and others -->
+
+    <div>
+    	hello div 
+    </div>
+
+
+
+
+
+    <!-- Inline Element ,, does not start on a new line,, the span (text container) --> 
+
+
+    <!-- An iframe is used to display a web page within a web page.
+
+    	An HTML iframe is defined with the <iframe> tag:
+
+    -->
+
+   <!-- <iframe src="iframe.htm" height="200" width="300"></iframe>  -->
+
+    
+    <iframe height="300px" width="100%" src="demo_iframe.htm" name="iframe_a"></iframe>
+
+    <p><a href="http://alandick.co.ke" target="iframe_a">ADC</a></p>  
+
+   
+	
+	<h2 id="C4">Middle</h2> 
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Date </button>  
+
+<p id="demo"></p>
+
+
+HTML Computer Code Elements <br>
+
+	<code>
+    x = 5;<br>
+	y = 6;<br>
+	z = x + y;
+	</code>
+
+	<pre>
+	<code>
+	x = 5;
+	y = 6;
+	z = x + y;
+	</code>
+	</pre>
+
+
+ <!-- HTML <kbd> For Keyboard Input 
+
+ 	-The HTML <kbd> element represents user input, like keyboard input or voice commands.
+ 	-Text surrounded by <kbd> tags is typically displayed in the browser's default monospace font:
+
+
+
+
+   HTML <samp> For Program Output
+   -The HTML <samp> element represents output from a program or computing system.
+   Text surrounded by <samp> tags is typically displayed in the browser's default monospace font:	
+
+
+
+   HTML <var> For Variables
+   -The HTML <var> element defines a variable.
+   -The variable could be a variable in a mathematical expression or a variable in programming context:	
+
+	
+
+	Tag	Description
+	<code>	Defines programming code
+	<kbd>	Defines keyboard input 
+	<samp>	Defines computer output
+	<var>	Defines a variable
+	<pre>	Defines preformatted text
+
+
+
+ -->
+
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+
+Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+
+
+
+<!--
+     HTML Entities
+	-Reserved characters in HTML must be replaced with character entities.
+	-Characters that are not present on your keyboard can also be replaced by entities.
+	-If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+	-Character entities are used to display reserved characters in HTML.
+	-To display a less than sign (<) we must write: &lt; or &#60;
+
+	*Non-breaking Space
+	-A common character entity used in HTML is the non-breaking space: &nbsp;
+	-A non-breaking space is a space that will not break into a new line.
+	-Another common use of the non-breaking space is to prevent that browsers truncate spaces in HTML pages.
+	-The non-breaking hyphen (&#8209;) lets you use a hyphen character (‑) that won't break.
+
+
+
+		Result	Description	Entity Name	Entity Number
+		non-breaking space	&nbsp;	&#160;
+		<	less than	&lt;	&#60;
+		>	greater than	&gt;	&#62;
+		&	ampersand	&amp;	&#38;
+		"	double quotation mark	&quot;	&#34;
+		'	single quotation mark (apostrophe)	&apos;	&#39;
+		¢	cent	&cent;	&#162;
+		£	pound	&pound;	&#163;
+		¥	yen	&yen;	&#165;
+		€	euro	&euro;	&#8364;
+		©	copyright	&copy;	&#169;
+		®	registered trademark	&reg;	&#174;
+
+
+
+		Combining Diacritical Marks
+		*A diacritical mark is a "glyph" added to a letter.
+		*Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.
+		-Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.
+		-Diacritical marks can be used in combination with alphanumeric characters, to produce a character that is not present in the character set (encoding) used in the page.
+
+		Mark	Character	Construct	Result
+		 ̀	a	a&#768;	à
+		 ́	a	a&#769;	á
+		̂	a	a&#770;	â
+		 ̃	a	a&#771;	ã
+		 ̀	O	O&#768;	Ò
+		 ́	O	O&#769;	Ó
+		̂	O	O&#770;	Ô
+		 ̃	O	O&#771;	Õ
+
+
+         HTML Symbol Entities
+         -Many mathematical, technical, and currency symbols, are not present on a normal keyboard.
+         -To add such symbols to an HTML page, you can use an HTML entity name.
+         -If no entity name exists, you can use an entity number, a decimal, or hexadecimal reference.
+
+
+         Some Mathematical Symbols Supported by HTML
+
+
+		Char	Number	Entity	Description
+			∀	&#8704;	&forall;	FOR ALL
+			∂	&#8706;	&part;	PARTIAL DIFFERENTIAL
+			∃	&#8707;	&exist;	THERE EXISTS
+			∅	&#8709;	&empty;	EMPTY SETS
+			∇	&#8711;	&nabla;	NABLA
+			∈	&#8712;	&isin;	ELEMENT OF
+			∉	&#8713;	&notin;	NOT AN ELEMENT OF
+			∋	&#8715;	&ni;	CONTAINS AS MEMBER
+			∏	&#8719;	&prod;	N-ARY PRODUCT
+			∑	&#8721;	&sum;	N-ARY SUMMATION
+
+
+		Some Greek Letters Supported by HTML
+			Char	Number	Entity	Description
+			Α	&#913;	&Alpha;	GREEK CAPITAL LETTER ALPHA
+			Β	&#914;	&Beta;	GREEK CAPITAL LETTER BETA
+			Γ	&#915;	&Gamma;	GREEK CAPITAL LETTER GAMMA
+			Δ	&#916;	&Delta;	GREEK CAPITAL LETTER DELTA
+			Ε	&#917;	&Epsilon;	GREEK CAPITAL LETTER EPSILON
+			Ζ	&#918;	&Zeta;	GREEK CAPITAL LETTER ZETA
+
+
+	    Some Other Entities Supported by HTML
+	    
+		    Char	Number	Entity	Description
+			©	&#169;	&copy;	COPYRIGHT SIGN
+			®	&#174;	&reg;	REGISTERED SIGN
+			€	&#8364;	&euro;	EURO SIGN
+			™	&#8482;	&trade;	TRADEMARK
+			←	&#8592;	&larr;	LEFTWARDS ARROW
+			↑	&#8593;	&uarr;	UPWARDS ARROW
+			→	&#8594;	&rarr;	RIGHTWARDS ARROW
+			↓	&#8595;	&darr;	DOWNWARDS ARROW
+			♠	&#9824;	&spades;	BLACK SPADE SUIT
+			♣	&#9827;	&clubs;	BLACK CLUB SUIT
+			♥	&#9829;	&hearts;	BLACK HEART SUIT
+			♦	&#9830;	&diams;	BLACK DIAMOND SUIT		
+
+
+
+
+
+      HTML Encoding (Character Sets)
+      -To display an HTML page correctly, a web browser must know which character set (character encoding) to use.
+
+      What is Character Encoding?
+
+      -ASCII was the first character encoding standard (also called character set). ASCII defined 128 different alphanumeric characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ < > .
+
+      ANSI (Windows-1252) was the original Windows character set, with support for 256 different character codes.
+
+      ISO-8859-1 was the default character set for HTML 4. This character set also supported 256 different character codes.
+
+      Because ANSI and ISO-8859-1 were so limited, HTML 4 also supported UTF-8.
+      UTF-8 (Unicode) covers almost all of the characters and symbols in the world.
+      The default character encoding for HTML5 is UTF-8.
+
+     
+     HTML Uniform Resource Locators
+     -A URL is another word for a web address.
+     -A URL can be composed of words (w3schools.com), or an Internet Protocol (IP) address (192.68.20.50).
+     -Most people enter the name when surfing, because names are easier to remember than numbers.
+
+     URL - Uniform Resource Locator
+     -Web browsers request pages from web servers by using a URL.
+     -A web address, like https://www.w3schools.com/html/default.asp follows these syntax rules:
+     -scheme://prefix.domain:port/path/filename
+
+     Explanation:
+
+		scheme - defines the type of Internet service (most common is http or https)
+		prefix - defines a domain prefix (default for http is www)
+		domain - defines the Internet domain name (like w3schools.com)
+		port - defines the port number at the host (default for http is 80)
+		path - defines a path at the server (If omitted: the root directory of the site)
+		filename - defines the name of a document or resource
+
+    Common URL Schemes
+
+	    Scheme	Short for	Used for
+		http	HyperText Transfer Protocol	Common web pages. Not encrypted
+		https	Secure HyperText Transfer Protocol	Secure web pages. Encrypted
+		ftp	File Transfer Protocol	Downloading or uploading files
+		file	 	A file on your computer		
+
+    URL Encoding
+    -URLs can only be sent over the Internet using the ASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be converted.
+    -URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet.
+    -URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits.
+    -URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.
+
+    ASCII Encoding Examples
+    -Your browser will encode input, according to the character-set used in your page.
+    -The default character-set in HTML5 is UTF-8.
+
+    
+    HTML and XHTML
+	    What Is XHTML?
+			XHTML stands for EXtensible HyperText Markup Language
+			XHTML is almost identical to HTML
+			XHTML is stricter than HTML
+			XHTML is HTML defined as an XML application
+			XHTML is supported by all major browsers
+
+	Why XHTML?
+	  -Many pages on the internet contain "bad" HTML.
+	  -Today's market consists of different browser technologies. Some browsers run on computers, and some browsers run on mobile phones or other small devices. Smaller devices often lack the resources or power to interpret "bad" markup.
+	  -XML is a markup language where documents must be marked up correctly (be "well-formed").
+
+
+
+
+
+     HTML5 Canvas
+     -The HTML <canvas> element is used to draw graphics on a web page.
+     -The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.
+     -Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+     -A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.
+     -<canvas id="myCanvas" width="200" height="100"></canvas>
+
+
+
+
+ -->
+
+  <br>See this   &#8209;  <br>
+  and &#8209;&#8209;&#8209;&#8209;&#8209;
+
+
+  <br>
+
+
+  <canvas id="myCanvas" width="200" height="100"></canvas>
+
+
+  <script type="text/javascript">
+    	var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.arc(95,50,40,0,2*Math.PI);
+		ctx.stroke();
+    </script>
+
+
+<!-- 
+
+HTML5 SVG 
+
+What is SVG?
+	SVG stands for Scalable Vector Graphics
+	SVG is used to define graphics for the Web
+	SVG is a W3C recommendation
+
+-The HTML <svg> element is a container for SVG graphics.
+-SVG has several methods for drawing paths, boxes, circles, text, and graphic images.	
+
+
+Comparison of Canvas and SVG
+The table below shows some important differences between Canvas and SVG:
+
+
+
+HTML Google Maps
+
+
+
+HTML Multimedia
+-Multimedia comes in many different formats. It can be almost anything you can hear or see.
+-Examples: Images, music, sound, videos, records, films, animations, and more.
+-Web pages often contain multimedia elements of different types and formats
+
+
+HTML5 Server-Sent Events
+-Server-Sent Events allow a web page to get updates from a server.
+-A server-sent event is when a web page automatically gets updates from a server.
+
+
+
+
+
+
+
+-->
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+
+
+
+
+
+
+</body>
+</html>
