@@ -23,7 +23,13 @@
 
        }
 
+       .center{
+       	padding: 10px;
+       	margin: 10px 30px 50px 30px;
+       	align-content: center;
+       }
 
+      
 	</style>
 
 
@@ -189,6 +195,10 @@
  -->
 <body>
 
+	<div class="center">
+
+     <p id="top"></p>  
+
 	<h1 style="color:blue;"> All about Web Technology ... 
 		<strong> 
 			<small> 
@@ -197,17 +207,21 @@
 				  </strong> <!-- important--> 
 				</h1>  
   
-    <p title='Site Author, "Peter Mwenda"' id="authorParam">Author: Peter Mwenda
+    <div title='Site Author, "Peter Mwenda"' id="authorParam">Author: Peter Mwenda
       <address>
       	P.O. BOX 51 <br>
       	60400 <br>
       	KENYA <br>
       </address>
-    </p> 
+    </div> 
 
     <a href="#C4">Jump to Middle </a>
 
-	<img src="peter.png" alt="Peter Mwenda" height="200" width="200">
+	<img src="peter.png" alt="Peter Mwenda" height="200" width="200"> 
+
+	<br>
+
+	<br>
 
 	<em> Welcome! </em>  I hope you have some water with you.
 	<br><mark>Yes, i said water,</mark> or if you like , H<sub>2</sub>0. 
@@ -563,6 +577,101 @@ HTML5 Server-Sent Events
 <svg width="100" height="100">
   <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
 </svg>
+
+
+
+<!-- tables and forms -->
+
+
+
+	<table border="2px">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Name</th>
+			<th>Email</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<tr>
+			<td>1</td>
+			<td>Felix Kimanthi</td>
+			<td>fk@gmail.com</td>
+		</tr>
+
+		<tr>
+			<td>2</td>
+			<td>Judith A</td>
+			<td>j_a@gmail.com</td>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td>Peter Langat</td>
+			<td>
+				<ul> 
+					<li>langat@gmail.com</li>
+					<li>langat13@gmail.com</li>
+		        </ul>
+	       </td>
+		</tr>
+
+		<tr>
+			<td>4</td>
+			<td>Peter Mwenda</td>
+			<td>
+				<ol type="i"> 
+					<li>pm@gmail.com</li>
+					<li>pm10@yahoo.com</li>
+		        </ol>
+			</td>
+		</tr>
+		
+	</tbody>
+</table>
+
+
+
+<form>
+	<fieldset>
+
+		Name:<input type="text" name="name"><br>
+		Email:<input type="email" name="email"><br>
+
+		Gender:
+		Male<input type="radio" name="gender">
+		Female<input type="radio" name="gender"><br>
+
+		<select >
+			<option></option>
+			<option>Kiambu</option>
+			<option>Nairobi</option>
+		</select> <br>
+
+		<input type="submit" name="Send"> 
+
+		
+	</fieldset>
+</form>
+
+
+<br>
+
+
+<div> 
+	<picture>
+		<source media="(min-width: 650px)" srcset="peter_1.jpeg"> 
+		<source media="(min-width: 465px)" srcset="peter_2.jpg">
+		<img src="peter_3.jpeg" alt="Flowers" style="width:auto;"> 
+    </picture>
+</div>
+
+
+<a href="#top">Top</a>
+
+</div>
+
 
 
 
