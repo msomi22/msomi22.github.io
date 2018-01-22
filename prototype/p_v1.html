@@ -22,6 +22,7 @@
 
   <script type="text/javascript" src="jquery/jquery-3.2.1.js"></script>  
   <script type="text/javascript" src="js/bootstrap.min.js"></script>   
+  <script type="text/javascript" src="js/app.js"></script>   
 
 
 
@@ -36,15 +37,15 @@
 <!-- Navigation tabs -->
   <ul class="nav nav-tabs">
 
-    <li class="active"><a data-toggle="tab" href="#home">Home</a></li> 
+    <li class="active"><a data-toggle="tab" href="#home" onclick="writelog(this);">Home</a></li> 
 
     <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sports
       <span class="caret"></span></a>
       <ul class="dropdown-menu">
-        <li><a data-toggle="tab" href="#menu1">Football</a></li>
-        <li><a data-toggle="tab" href="#menu2">Tennis</a></li>
-        <li><a data-toggle="tab" href="#menu3">Rugby</a></li> 
+        <li><a data-toggle="tab" href="#menu1" onclick="writelog(this);" >Football</a></li>
+        <li><a data-toggle="tab" href="#menu2" onclick="writelog(this);">Tennis</a></li>
+        <li><a data-toggle="tab" href="#menu3" onclick="writelog(this);">Rugby</a></li> 
       </ul>
     </li>
 
@@ -52,9 +53,9 @@
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Academics
       <span class="caret"></span></a>
       <ul class="dropdown-menu">
-        <li><a data-toggle="tab" href="#menu4">Exam time table</a></li>
-        <li><a data-toggle="tab" href="#menu5">Android bootcamp</a></li>
-        <li><a data-toggle="tab" href="#menu6">Huawei IoT show</a></li> 
+        <li><a data-toggle="tab" href="#menu4" onclick="writelog(this);">Exam time table</a></li>
+        <li><a data-toggle="tab" href="#menu5" onclick="writelog(this);">Android bootcamp</a></li>
+        <li><a data-toggle="tab" href="#menu6" onclick="writelog(this);">Huawei IoT show</a></li> 
       </ul>
     </li>  
 
@@ -62,9 +63,9 @@
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Students Welfare
       <span class="caret"></span></a>
       <ul class="dropdown-menu">
-        <li><a data-toggle="tab" href="#menu7">Cultural week</a></li>
-        <li><a data-toggle="tab" href="#menu8">Cancer awareness</a></li>
-        <li><a data-toggle="tab" href="#menu9">Student leaders </a></li> 
+        <li><a data-toggle="tab" href="#menu7" onclick="writelog(this);">Cultural week</a></li>
+        <li><a data-toggle="tab" href="#menu8" onclick="writelog(this);">Cancer awareness</a></li>
+        <li><a data-toggle="tab" href="#menu9" onclick="writelog(this);">Student leaders </a></li> 
       </ul>
     </li>
 
@@ -72,13 +73,13 @@
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events
       <span class="caret"></span></a>
       <ul class="dropdown-menu">
-        <li><a data-toggle="tab" href="#menu10">Freshers Night</a></li>
-        <li><a data-toggle="tab" href="#menu11">C.U crusade</a></li>
+        <li><a data-toggle="tab" href="#menu10" onclick="writelog(this);">Freshers Night</a></li>
+        <li><a data-toggle="tab" href="#menu11" onclick="writelog(this);">C.U crusade</a></li>
       </ul>
     </li>
 
-    <li><a data-toggle="tab" href="#menu12">About</a></li>
-    <li><a data-toggle="tab" href="#menu13">Help</a></li>
+    <li><a data-toggle="tab" href="#menu12" onclick="writelog(this);">About</a></li>
+    <li><a data-toggle="tab" href="#menu13" onclick="writelog(this);">Help</a></li>
 
  </ul>
  <!-- Navigation tabs ends here --> 
