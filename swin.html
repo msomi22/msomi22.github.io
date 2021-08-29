@@ -88,33 +88,33 @@
                                * 2+1+7=10<br>
                                * 1+7+4=12<br>
                                * 7+4+9=20<br>
-                               */
-                              int sum = 0;
-                              for(int i=0;i<=n-k;i++) {
-                                int s = 0;
-                                for(int j=i;j< (i+k); j++) {
-                                  s += arr[j];
-                                }
-                                sum = s > sum ? s : sum;
-                              }
-                                System.out.println("" + sum);//20			
-                              //smart O(N)
-                                /**>>>> 5,2,1,7,4,9
-                               * 5+2+1=8
-                               * add 7(next), minus 1 (first)
-                               * add 4 minus 2
-                               * add 9 minus 1
-                               */
-                                   int win = 0, max = 0;
-                                   for(int i=0;i<k;i++) {
-                                     win += arr[i];
-                                   }
-                                   for(int i=k;i<n;i++) {
-                                     win = win + arr[i] - arr[i-k];
-                                     max = win > max ? win : max;
-                                   }
-                                   System.out.println("max " + max);//20
-                            }
+                               */<br>
+                              int sum = 0;<br>
+                              for(int i=0;i<=n-k;i++) {<br>
+                                int s = 0;<br>
+                                for(int j=i;j< (i+k); j++) {<br>
+                                  s += arr[j];<br>
+                                }<br>
+                                sum = s > sum ? s : sum;<br>
+                              }<br>
+                                System.out.println("" + sum);//20<br>			
+                              //smart O(N)<br>
+                                /**>>>> 5,2,1,7,4,9<br>
+                               * 5+2+1=8<br>
+                               * add 7(next), minus 1 (first)<br>
+                               * add 4 minus 2<br>
+                               * add 9 minus 1<br>
+                               */<br>
+                                   int win = 0, max = 0;<br>
+                                   for(int i=0;i<k;i++) {<br>
+                                     win += arr[i];<br>
+                                   }<br>
+                                   for(int i=k;i<n;i++) {<br>
+                                     win = win + arr[i] - arr[i-k];<br>
+                                     max = win > max ? win : max;<br>
+                                   }<br>
+                                   System.out.println("max " + max);//20<br>
+                            }<br>
                        </code>
                      </p>		  
                      
