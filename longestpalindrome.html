@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Njeru Mwenda Peter</title>
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i">
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- Favicon and touch icons -->
+      <link rel="shortcut icon" href="assets/ico/favicon.png">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+      <meta charset="UTF-8">
+      <meta name="description" content="Technology">
+      <meta name="keywords" content="sliding window algorithm problems,sliding, window, algorithm, problems, java, code">
+      <meta name="author" content="Peter Mwenda">
+      <style type="text/css">
+         .myThoughts{
+         text-align: justify;
+         }
+         body{
+         font-family: "Times New Roman", Georgia, Serif;   
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Top menu -->
+      <nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index.html">Njeru Mwenda Peter</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="top-navbar-1">
+               <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">About Me</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Top content -->
+      <div class="top-content">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 text wow fadeInLeft">
+                  <h1>Welcome to <strong>Njeru Mwenda Peter's  </strong> Official Website</h1>
+                  <div class="description">
+                     <p class="medium-paragraph">
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Features -->
+      <div class="features-container section-container">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 features section-description wow fadeIn">
+                  <div class="myThoughts">
+			  <p>
+			  <h3> Longest Palindrome - Java</h3>
+			  
+			  </p>
+
+
+<code>
+  <br>
+s = "madamracecarbob"<br>
+//some validations here<br>
+1. start=0, min=0,max=0<br>
+//min and max will store the longest palindrome<br>
+//start and and end index<br>
+2. for all characters from i to N<br>
+//below will take care for a string like 'madam'<br>
+//we will vitualize to understand this better<br>
+3. int a = expand(s,start,start)<br>
+//below will take care for a string like 'appa'<br>
+//we will vitualize to understand this better<br>
+4. int b = expand(s,start,start+1)<br>
+// we get the longest 'index'<br>
+   int len = max(a,b)<br>
+//updating min and max only when we have a longest<br>
+//palindrome, i.e. when len > (max-min)<br>
+//you will understand why len > (max-min)<br>
+5. if(len > (max-min)<br>
+6. update min and max <br>
+//remember, our 'i' is growing<br>
+//in the case of bob, expand gave us 3 and i = 1<br>
+//start= 1-(3-1)/2 = 1-2/2 = 1-1 = 0<br>
+//end= 1+(3/2) = 1+(1)=2<br>
+7. min = new min value (i-(len-1)/2)//0<br>
+8. max = new max value (i + (len/2)) //2<br>
+//we will see why end+1 soon <br>
+//remember the below is substring and should not<br>
+//be confused with array[index]<br>
+//substring works from startIndex to endIndex+1<br>
+9. return s.sub(start,end+1)//0,3<br>
+//-------------<br>
+expand(s, start, end)<br>
+//some validations here<br>
+1. while (start >= 0 and end < N and <br>
+     character at 'start' is equal to character<br>
+	 at 'end')<br>
+//the above condation is true for<br>
+//'p' and 'p' in 'appa' and index 1 and 2 (start,end)<br>
+//and for 'o' in 'bob' at index 1 and 1 (start,end)	 <br>
+2. start-- and end ++<br>
+//we found a pontential palindrome<br>
+//we check the next characters, this is where we expand from center. for 'bob' at i = 1<br>
+//we will check 'b' and 'b' before start and end growing beyound our limits, start >= 0 and end < new <br>
+<br>
+//return the max 'index' where the loop exited<br>
+//after getting longest palindrome<br>
+//this index will be end - start -1<br>
+//we will later and 1 to our max <br>
+//let see why the below by an example<br>
+//we start by 'bob' at start=end=1 = 'o'<br>
+//first: <br>
+// - start = 1, end = 1<br>
+// - start-- end++ <br>
+// start = 0, = end = 2<br>
+// s[start] = s[end= >> 'b = b'<br>
+//check[start-- end++, start = -1, end = 3 >> break]<br>
+//we break at start = -1 and end = 3<br>
+//what is the last index?<br>
+//we can say 3 - (-1) - 1 = 3<br>
+return end - start - 1; <br>
+//go back to 5-9 for better understanding<br>
+<br>
+//After understanding the process<br>
+//Let's now analyze the below<br>
+s = "madamracecarbob"<br>
+/**<br>
+0,0 >> 'm'our longest palindrome<br>
+0,1 >> not a palindrome<br>
+1,1 >> 'a' >> 0,2 = m and d >> not a palindrome<br>
+1,2 >> not a palindrome<br>
+2,2 >> 'd' >> 1,3 ok >> 0,4 ok >> -1,5 break <br>
+end = (right - left -1) =  5 - (-1) - 1 = 5 <br>
+we have new longest palindrome 0,5 and i = 2<br>
+min = (i-(len-1)/2)<br>
+max = (i + (len/2))<br>
+min = 2 - (5-1)/2 = 2 - (4/2) = 0<br>
+max = 2 + (5/2) = 2 + 2 = 4<br>
+longest palindrome is s.sub(0,4+1)<br>
+2,3 >> not palindrome<br>
+3,3 >> 'a' >> 2,4 not a palindrome<br>
+3,4 >> not a palindrome<br>
+4,4 >> 'm' >> 3,5 not a palindrome<br>
+5,5 >> 'r' >> 4,6 not a palindrome<br>
+5,6 >> not a palindrome<br>
+6,6 >> 'a' >> 5,7 not a palindrome<br>
+6,7 >> not a palindrome<br>
+7,7 >> 'c' ,6,7 not a palindrome<br>
+8,8 >> 'e' >> 7,9 ok >> 6,10 ok >> 5,11 ok >> 4,12 break <br>
+end  at 4,12 since 'm' and 'b' are not equal<br>
+end = (right - left -1)<br>
+end = (12 - 4 - 1) = 7 and i was 8<br>
+<br>
+Previously<br>
+min = 0 and max = 4<br>
+len > (max-min), 7 > (4-0) , we will update min/max<br>
+<br>
+min = (i-(len-1)/2)<br>
+min = (8-(7-1)/2) = 8 - 6/2 = 8 - 3 = 5<br>
+max = (i + (len/2))<br>
+max = (8 + (7/3)) = 8 + 3 = 11<br>
+min = 5, max = 11 <br>
+<br>
+The process will continue till end of the string<br>
+<br>
+8,9 >> not a palindrome<br>
+<br>
+... continue<br>
+<br>
+s = "m,a,d,a,m,r,a,c,e,c,a, r, b, o, b"<br>
+     0,1,2,3,4,5,6,7,8,9,10,11,12,13,14<br>
+
+*/<br>
+  <br>
+<br>
+//Sample code
+<br>
+<br>
+public class MyClass {<br>
+<br><br>
+	public static void main(String[] args) {<br>
+		String s = "bobracecarmadam"; <br>
+		char[] arr = s.toCharArray();<br>
+		int n = arr.length;<br>
+		int max = 0, min = 0;<br>
+		for(int i=0;i<n;i++) {<br>
+			int a = expand(arr, n, i, i);<br>
+			int b = expand(arr, n, i, i+1);<br>
+			int len = Math.max(a, b);<br>
+			if(len > (max-min)) {<br>
+				min = i - (len -1)/2;<br>
+				max = i + (len/2);<br>
+			}<br>
+		}<br>
+		String longest = s.substring(min, max+1);<br>
+		System.out.println("longest = " +longest);<br>
+
+	}<br>
+<br>
+	private static int expand(char[] arr, int n, int left, int right) {<br>
+		while(left >= 0 && right < n && arr[left] == arr[right]) {<br>
+			left--; right++;<br>
+		}<br>
+		return right - left - 1;<br>
+	}<br>
+}<br>
+</code>
+  
+ </p>		  
+                     
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+            
+            </div>
+            <div class="row">
+               <div class="col-sm-6 features-box wow fadeInLeft">
+                  <div class="row">
+                  </div>
+               </div>
+               <div class="col-sm-6 features-box wow fadeInLeft">
+                  <div class="row">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 footer-copyright">
+                  Peter Mwenda (85452=24=6 465541=25=7) 13 = 4
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Javascript -->
+      <script src="assets/js/jquery-1.11.1.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.backstretch.min.js"></script>
+      <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/waypoints.min.js"></script>
+      <script src="assets/js/scripts.js"></script>
+      <!--[if lt IE 10]>
+      <script src="assets/js/placeholder.js"></script>
+      <![endif]-->
+   </body>
+</html>
+ 
+                                
